@@ -24,4 +24,37 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnAddLoadStateListenerToPagingDataAdapter"/>
 
+    <TextView
+        android:id="@+id/tv_message_outside_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvMainLoadStateResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/pb_progress_outside_recycler_view"/>
+
+    <ProgressBar
+        android:id="@+id/pb_progress_outside_recycler_view"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:layout_marginTop="20sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddLoadStateListenerToPagingDataAdapter"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_retry_outside_recycler_view"
+        android:text="Retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/pb_progress_outside_recycler_view" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

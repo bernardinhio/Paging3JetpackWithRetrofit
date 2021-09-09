@@ -48,7 +48,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         )
 
 
-         with(viewBinding.rvResults){
+        with(viewBinding.rvResults){
             layoutManager = LinearLayoutManager(this.context)
             setHasFixedSize(false)  // IMPORTANT we have to make it FALSE not like Normal RecyclerView!!!
 
@@ -58,8 +58,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         viewBinding.btnAddLoadStateListenerToPagingDataAdapter.setOnClickListener {
             //viewModel.giveMeLiveDataOfPagingDataOfPhotos("pinion").observe(
-            viewModel.giveMeLiveDataOfPagingDataOfPhotos("evrvbrjhbvjrbrjvb").observe(
-            //viewModel.giveMeLiveDataOfPagingDataOfPhotos("hello").observe(
+            //viewModel.giveMeLiveDataOfPagingDataOfPhotos("evrvbrjhbvjrbrjvb").observe(
+            viewModel.giveMeLiveDataOfPagingDataOfPhotos("hello").observe(
                 viewLifecycleOwner,
                 { pagingData ->
                     viewBinding.rvResults.visibility = View.VISIBLE
@@ -70,6 +70,44 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                 }
             )
         }
+
+
+
+        photosPagingDataAdapter.addLoadStateListener { combinedLoadState ->
+
+            when (combinedLoadState.source.refresh) {
+
+                is LoadState.Loading -> {
+                    Log.d("pagingLog", "addLoadStateListener: source.refresh = Loading")
+                    viewBinding.pbProgressOutsideRecyclerView.visibility = View.VISIBLE
+                    viewBinding.tvMessageOutsideRecyclerView.visibility = View.VISIBLE
+                    viewBinding.tvMessageOutsideRecyclerView.text = "Searching Photos..."
+                }
+
+                is LoadState.NotLoading -> {
+                    Log.d("pagingLog", "addLoadStateListener: source.refresh = NotLoading")
+                    viewBinding.tvMessageOutsideRecyclerView.visibility = View.INVISIBLE
+                    viewBinding.btnRetryOutsideRecyclerView.visibility = View.INVISIBLE
+                    viewBinding.pbProgressOutsideRecyclerView.visibility = View.INVISIBLE
+                }
+
+                // for ex no Internet or Server broken
+                is LoadState.Error -> {
+                    Log.d("pagingLog", "addLoadStateListener: source.refresh = Error")
+                    // show message and button retry
+                    viewBinding.tvMessageOutsideRecyclerView.visibility = View.VISIBLE
+                    viewBinding.tvMessageOutsideRecyclerView.text = (combinedLoadState.source.refresh as LoadState.Error).error.message
+                    viewBinding.btnRetryOutsideRecyclerView.visibility = View.VISIBLE
+                    viewBinding.btnRetryOutsideRecyclerView.setOnClickListener { photosPagingDataAdapter.retry() }
+                    viewBinding.pbProgressOutsideRecyclerView.visibility = View.GONE
+                    viewBinding.rvResults.visibility = View.INVISIBLE
+                }
+            }
+
+        }
+
+
+
 
 
     }
