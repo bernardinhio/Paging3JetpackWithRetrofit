@@ -1,0 +1,1 @@
+I am learning this Library Paging3 since some weekends, originally I don't know about Paging2 but this newwer version is very advanced. I have succeeded till now to implement the PagingdataAdapter to show a list of images and also I have succeeded in doing the cases of adding footer and header to the RecyclerView in the cases of LoadState.Error and LoadState.Loading
