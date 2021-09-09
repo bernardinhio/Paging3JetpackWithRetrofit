@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/Pagination or Paging Library to manage Loading data in Infinit Scroll/Projects/PagingLibrary/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/13 Retrofit@Header@QueryAndUseAcessKeyFromApiToCreateHeader/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/13 Retrofit@Header@QueryAndUseAcessKeyFromApiToCreateHeader/app/src/main/res/layout/fragment_main.xml" value="0.2857142857142857" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/13 Retrofit@HeaderAndUseAcessKeyFromApiToCreateHeader/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/15 Retrofit@Header@QueryAndAcessKeyMvvmDaggerHiltPagingLibraryAndRecyclerView/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/15 Retrofit@Header@QueryAndAcessKeyMvvmDaggerHiltPagingLibraryAndRecyclerView/app/src/main/res/layout/item_recyclerview.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/15 Retrofit@Header@QueryAndAcessKeyMvvmDaggerHiltRecyclerView/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/15 Retrofit@Header@QueryAndAcessKeyMvvmDaggerHiltRecyclerView/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/15 Retrofit@Header@QueryAndAcessKeyMvvmDaggerHiltRecyclerView/app/src/main/res/layout/item_recyclervoew.xml" value="0.8571428571428571" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/19 AddLoadStateListener()ToPagingDataAdapterToChangeSomethingInUiIfLoadingStateChanges/app/src/main/res/drawable/ic_error.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/19 AddLoadStateListener()ToPagingDataAdapterToChangeSomethingInUiIfLoadingStateChanges/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/19 AddLoadStateListener()ToPagingDataAdapterToChangeSomethingInUiIfLoadingStateChanges/app/src/main/res/layout/item_footer_recyclerview.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/PagingLibrary New url/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/PagingLibrary/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/PagingLibraryModifyApiCall/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Projects/Paging Or Pagination with Retrofit/Projects/PagingWithRetrofit/app/src/main/res/layout/fragment_main.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
